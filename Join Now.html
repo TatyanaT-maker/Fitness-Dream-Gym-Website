@@ -1,0 +1,224 @@
+<!DOCTYPE>
+<html>
+<style>
+
+body {font-family: Arial;}
+* {box-sizing: border-box;}
+
+.bg-img {
+  
+  background-image: url("weights.jpg");
+	background-color:green;
+
+  min-height: 180px;
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 20px 60px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: green;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+
+<h1> Dream Fitness</h1>
+<div class="bg-img">
+  <div class="container">
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a></li>
+  	<a href="Join Now.html"> Join Now</a></li>
+  	<a href="Contact Us.html">Contact Us</a></li>
+  	<a href="About Us.html"> About Us</a></li>
+	<a href="Classes.html"> Classes</a></li>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+<h2> Join Now!</h2>
+<head>
+	<title>JOIN NOW!</title>
+<SCRIPT language=javascript>
+
+	
+	function Validate() {
+	
+	var FLAG = 0;
+	
+	if(document.myform.fname.value == '') {
+	FLAG = 1;
+	fn.innerHTML= '<b>First Name is Empty</b>';
+	}
+	
+	if(document.myform.lname.value == '') {
+	FLAG = 1;
+	ln.innerHTML = '<b>Last Name is Empty</b>';
+	}
+	if(document.myform.age.value == '') {
+	FLAG = 1;
+	ag.innerHTML = '<b>Age is Empty</b>';
+	}
+	if(document.myform.address.value == '') {
+	FLAG = 1;
+	ad.innerHTML = '<b>Address is Empty</b>';
+	}
+	
+	if(document.myform.city.value == '') {
+	FLAG = 1;
+	ct.innerHTML = '<b>City is Empty</b>';
+	}
+	
+	if(document.myform.state.value == '') {
+	FLAG = 1;
+	st.innerHTML = '<b>State is Empty</b>';
+	}
+	
+	if(document.myform.zip.value == '') {
+	FLAG = 1;
+	z.innerHTML = '<b>Zip is Empty</b>';
+	}
+
+	if(document.myform.email.value == '') {
+	FLAG = 1;
+	em.innerHTML = '<b>E-Mail is Empty</b>';
+	}
+
+	if(document.myform.cardname.value == '') {
+	FLAG = 1;
+	ca.innerHTML = '<b>Name on Card is Empty</b>';
+	}
+
+	if(document.myform.cardnumber.value == '') {
+	FLAG = 1;
+	cn.innerHTML = '<b>Card Number is Empty</b>';
+	}
+
+	if(document.myform.cvv.value == '') {
+	FLAG = 1;
+	cv.innerHTML = '<b>CVV is Empty</b>';
+	}
+
+	if( FLAG ) {
+	return false;
+	}
+	else
+	alert("Congratulations for Signing Up! Welcome to Dream Fitness!");
+	return true;
+	}
+	
+	</script>
+</head>
+
+<body>
+
+<form name="myform" onSubmit="return Validate()">
+<table border="2" align="center">
+<tr><th>1 Year Membership!</tr>
+<tr><td>The Membership for the year is a total of $500.00. $250 down payment
+and the rest is due in 3 months!
+<ul>Offerings: 
+<li>Free sports water bottle with logo on it!</li></td></tr>
+
+
+ <tr>
+ <table border="2" align="center" style="background-color: white" width:"100">
+
+			<caption style="font-size:120%;"><em>Personal Information</em></caption>
+  <td>First Name:</td>
+  <td><input name=fname><span id=fn></span></td>
+ </tr>
+ <tr>
+  <td>Last Name:</td>
+  <td><input name=lname><span id=ln></span></td>
+ </tr>
+ <tr>
+	<td>Age:</td>
+  <td><input name=age><span id=ag></span></td>
+ </tr>
+ <td>Address:</td>
+ <td><input name=address><span id=ad></span></td>
+ </tr>
+ <tr>
+ <td>City:</td>
+ <td><input name=city><span id=ct></span></td>
+ </tr>
+ <tr>
+  <td>State:</td>
+  <td><input name=state><span id=st></span></td>
+ </tr>
+ <tr>
+  <td>Zip:</td>
+  <td><input name=zip><span id=z></span></td>
+ </tr>
+ <tr>
+  <td>Email:</td>
+  <td><input name=email><span id=em></span></td>
+  <tr>
+  </table>
+  <tr>
+ <table border="2" align="center" style="background-color: white" width:"100">
+ <caption style="font-size:120%;"><em>Optional</em></caption>
+  <td>Please select the class you want to take:</td>
+  <td><input type="radio" name="class" value="Yoga"> Yoga</td>
+ <td><input type="radio" name="class value="Martial Arts"> Martial Arts</td>
+  <td><input type="radio" name="class" value="Step"> Step</td>
+  <td><input type="radio" name="class" value="Cycling"> Cycling</td>
+  <td><input type="radio" name="class" value="Zumba"> Zumba</td>
+
+ <table border="2" align="center" style="background-color: white" width:"100">
+
+			<caption style="font-size:120%;"><em>Credit Card Information</em></caption>
+  <td>Credit Card Name:</td>
+  <td><input name=cardname><span id=ca></span></td>
+ </tr>
+ <tr>
+  <td>Card Number:</td>
+  <td><input name=cardnumber><span id=cn></span></td>
+ </tr>
+ <tr>
+	<td>CVV:</td>
+  <td><input name=cvv><span id=cv></span></td>
+ </tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><input type=submit></td>
+ </tr>
+</table>
+</form>
+
+</body>
+</html>
